@@ -80,9 +80,33 @@ body{
     width: 100px;
 }
 
+.button {
+    display: inline-block;
+    background-color: #9894cf;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    height: 80px;
+    width: 180px;
+  }
+
+  /* Style for the image inside the button */
+  .button img {
+    width: 20px; /* Adjust the image size as needed */
+    height: 20px; /* Adjust the image size as needed */
+    margin-right: 10px; /* Add spacing between the image and text */
+  }
+
+.quickaction{
+
+}
+
 .btnholder{
     margin: 0 -80px;
 }
+
+
 
 @media (max-width: 1200px) {
 
@@ -95,6 +119,7 @@ body{
         /* margin-left: -180px; */
     }
 }
+
 .actionbtn{
     background-color: #9894cf;
     height: 90px;
