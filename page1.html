@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- Add Bootstrap CSS link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Add your custom CSS here -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col topbar">
+        <!-- <h2 style="margin-left: 60px; margin-top: 10px;">LOGO HERE</h2> -->
+        <img class="toplogo" src="assets/Logo.jpg" alt="">
+        <div class="user-profile">
+          <img class="user-img" src="assets/profile.png" onclick="showMenu()">
+          <a href="#"  onclick="showMenu()">Mentor Name <i class="fa fa-chevron-down" style="margin-left: 5px;"></i></a>
+        </div>
+        <div class="profile-dropdown-wrap" id="sub-menu">
+          <div class="profile-dropdown">
+            <a href="#" class="droptxt"><span class="fa fa-gear" style="margin-right: 10px; margin-bottom: 10px;"></span>Settings<br></a>
+            <a href="#" class="droptxt"><span class="fa fa-power-off" style="margin-right: 10px;"></span>Sign Out</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="row">
+      <!-- Sidebar -->
+      <div id="wrapper" class="row">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper" class="col">
+            <ul class="sidebar-nav" style="margin-left:0;  margin-right: 10px;">
+                <li class="pg01">
+                    <a href="#"><i class="material-icons sbicon">home</i> <span class="navtxt">Home</span>  </a>
+                </li>
+                <li  class="pg02">
+                    <a href="#"> <i class="material-icons sbicon"> person </i> <span class="navtxt">Mentor</span> </a>
+                </li>
+                <li  class="pg03">
+                    <a href="#"> <i class="material-icons sbicon"> supervisor_account </i> <span class="navtxt">Mentee</span> </a>
+                </li>
+                <li  class="pg04">
+                    <a href="#"> <i class="material-icons sbicon"> description </i> <span class="navtxt"> Reports</span> </a>
+                </li>
+                <li class="sidebar-brand pg05" id="menu-toggle" href="#menu-toggle">                    
+                  <a href="#"><i class="material-icons sbicon">menu</i> <span class="navtxt"></span>  </a>
+                </li>
+            </ul>
+        </div>
+      <!-- Main content -->
+        <div class="col-10 main">
+          <!-- Main content goes here -->
+            <h4 style="margin-top: 80px;">  </h4>
+            
+            <div class="container quickaction">
+              <h4 class="row" style="margin-top: 40px; margin-left: -80px;">Quick Action</h4>
+              <div class="row" style="margin: 0 -80px;">
+                <div class="col-2 center actionbtn">
+                  <h4 style="color: white;">Mentor</h4>
+                </div>            
+                <div class="col-2 center actionbtn">
+                  <h4 style="color: white;">View Report</h4>
+                </div>                
+              </div>
+              <div class="row" style="margin: 0 -80px;">
+                <div class="col-2 center actionbtn">
+                  <h4 style="color: white;">Mentor Profile</h4>
+                </div>            
+                <div class="col-2 center actionbtn">
+                  <h4 style="color: white;">Add Mentee</h4>
+                </div>                
+              </div>
+            </div>
+            <h4 style="margin-top: 40px; padding-top: 100px;">Recent Mentees</h4>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla recusandae animi consequuntur cum distinctio consectetur ducimus sequi, tempora eaque suscipit, libero, minus quae! Debitis, asperiores numquam? Vitae, quia recusandae ad architecto accusamus ipsa perspiciatis, nemo, quasi sit qui distinctio deleniti.
+            <h4 style="margin-top: 40px; padding-top: 100px;">Recent Mentees</h4>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla recusandae animi consequuntur cum distinctio consectetur ducimus sequi, tempora eaque suscipit, libero, minus quae! Debitis, asperiores numquam? Vitae, quia recusandae ad architecto accusamus ipsa perspiciatis, nemo, quasi sit qui distinctio deleniti.<h4 style="margin-top: 40px; padding-top: 100px;">Recent Mentees</h4>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla recusandae animi consequuntur cum distinctio consectetur ducimus sequi, tempora eaque suscipit, libero, minus quae! Debitis, asperiores numquam? Vitae, quia recusandae ad architecto accusamus ipsa perspiciatis, nemo, quasi sit qui distinctio deleniti.
+        </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap and custom scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Add your custom JavaScript here -->
+  <script src="scripts.js"></script>
+</body>
+</html>
