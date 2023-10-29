@@ -79,11 +79,53 @@ body{
     height: 100vh;
     width: 100px;
 }
+
+.btnholder{
+    margin: 0 -80px;
+}
+
+@media (max-width: 1200px) {
+
+    .btnholder{
+        margin-left: -220px;
+    }   
+    
+    .headingM1{
+        margin-top: 0px;
+        /* margin-left: -180px; */
+    }
+}
 .actionbtn{
     background-color: #9894cf;
     height: 90px;
+    width: 120px;
     border-radius: 15px;
     margin: 5px 5px;
+}
+
+.actionicon{
+    width: 30%;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    filter: invert(100%) sepia(0%) saturate(1909%) hue-rotate(153deg) brightness(106%) contrast(105%);
+}
+
+.actionbtn h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.45rem;
+    margin-left: 30%;
+    text-align: left;
+    text-decoration: none;
+    transition: font-size 0.2s;
+}
+
+.actionbtn:hover{
+    text-decoration: none;
+}
+
+.actionbtn:hover h4{
+    font-size: 1.52rem;
 }
 
 .main{
@@ -98,7 +140,10 @@ body{
     overflow-y: scroll;
 }
 
-.main h4{
+.headingM1{
+    margin-top: 0px;
+    /* margin-left: -80px; */
+    margin-bottom: 50px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
